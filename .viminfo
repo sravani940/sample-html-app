@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1685446130,,"wq!"
+|2,0,1685447019,,"wq!"
 
 # Search String History (newest to oldest):
 
@@ -25,24 +25,42 @@
 # Registers:
 
 # File marks:
-'0  5  121  ~/inventory
-|4,48,5,121,1685446130,"~/inventory"
-'1  13  0  ~/deploy-nginx.yaml
-|4,49,13,0,1685445878,"~/deploy-nginx.yaml"
-'2  12  0  ~/index.html
-|4,50,12,0,1685445549,"~/index.html"
-'3  19  0  ~/install-nginx.yaml
-|4,51,19,0,1685445464,"~/install-nginx.yaml"
+'0  10  130  ~/Jenkinsfile
+|4,48,10,130,1685447019,"~/Jenkinsfile"
+'1  5  121  ~/inventory
+|4,49,5,121,1685446130,"~/inventory"
+'2  13  0  ~/deploy-nginx.yaml
+|4,50,13,0,1685445878,"~/deploy-nginx.yaml"
+'3  12  0  ~/index.html
+|4,51,12,0,1685445549,"~/index.html"
+'4  19  0  ~/install-nginx.yaml
+|4,52,19,0,1685445464,"~/install-nginx.yaml"
 
 # Jumplist (newest first):
+-'  10  130  ~/Jenkinsfile
+|4,39,10,130,1685447019,"~/Jenkinsfile"
+-'  1  0  ~/Jenkinsfile
+|4,39,1,0,1685446904,"~/Jenkinsfile"
 -'  5  121  ~/inventory
 |4,39,5,121,1685446130,"~/inventory"
+-'  5  121  ~/inventory
+|4,39,5,121,1685446130,"~/inventory"
+-'  1  0  ~/inventory
+|4,39,1,0,1685445923,"~/inventory"
 -'  1  0  ~/inventory
 |4,39,1,0,1685445923,"~/inventory"
 -'  13  0  ~/deploy-nginx.yaml
 |4,39,13,0,1685445878,"~/deploy-nginx.yaml"
 -'  13  0  ~/deploy-nginx.yaml
 |4,39,13,0,1685445878,"~/deploy-nginx.yaml"
+-'  13  0  ~/deploy-nginx.yaml
+|4,39,13,0,1685445878,"~/deploy-nginx.yaml"
+-'  13  0  ~/deploy-nginx.yaml
+|4,39,13,0,1685445878,"~/deploy-nginx.yaml"
+-'  1  0  ~/deploy-nginx.yaml
+|4,39,1,0,1685445838,"~/deploy-nginx.yaml"
+-'  1  0  ~/deploy-nginx.yaml
+|4,39,1,0,1685445838,"~/deploy-nginx.yaml"
 -'  1  0  ~/deploy-nginx.yaml
 |4,39,1,0,1685445838,"~/deploy-nginx.yaml"
 -'  1  0  ~/deploy-nginx.yaml
@@ -55,6 +73,22 @@
 |4,39,12,0,1685445549,"~/index.html"
 -'  12  0  ~/index.html
 |4,39,12,0,1685445549,"~/index.html"
+-'  12  0  ~/index.html
+|4,39,12,0,1685445549,"~/index.html"
+-'  12  0  ~/index.html
+|4,39,12,0,1685445549,"~/index.html"
+-'  12  0  ~/index.html
+|4,39,12,0,1685445549,"~/index.html"
+-'  12  0  ~/index.html
+|4,39,12,0,1685445549,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1685445477,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1685445477,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1685445477,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1685445477,"~/index.html"
 -'  1  0  ~/index.html
 |4,39,1,0,1685445477,"~/index.html"
 -'  1  0  ~/index.html
@@ -79,6 +113,38 @@
 |4,39,19,0,1685445464,"~/install-nginx.yaml"
 -'  19  0  ~/install-nginx.yaml
 |4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  19  0  ~/install-nginx.yaml
+|4,39,19,0,1685445464,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
+-'  1  0  ~/install-nginx.yaml
+|4,39,1,0,1685445394,"~/install-nginx.yaml"
 -'  1  0  ~/install-nginx.yaml
 |4,39,1,0,1685445394,"~/install-nginx.yaml"
 -'  1  0  ~/install-nginx.yaml
@@ -97,6 +163,15 @@
 |4,39,1,0,1685445394,"~/install-nginx.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/Jenkinsfile
+	*	1685447015	0
+	"	10	130
+	^	10	131
+	.	10	130
+	+	25	1
+	+	4	22
+	+	10	130
 
 > ~/inventory
 	*	1685446126	0
