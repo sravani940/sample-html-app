@@ -11,14 +11,15 @@ pipeline {
             }
         }
         stage('prepare') {
-            steps {
-                sh "chmod +x deploy_script.sh"
-                sh "sudo ./deploy_script.sh prepare"
+            steps{
+                    sh "sudo chmod 400 master.pem"
+                    sh "sudo ansible-playbook -i inventory install-nginx.yml"
+            }
             }
         }
         stage('deploy') {
             steps {
-                sh "./deploy_script.sh deploy"
+                sh "sudo ansible-playbook -i inventory deploy-nginx.yml"
             }
         }
     }
