@@ -14,7 +14,7 @@ pipeline {
             steps{
                     sh "sudo chmod 400 master.pem"
                     sh "sudo ansible-playbook -i inventory install-nginx.yml"
-            }
+               }
             }
         }
         stage('deploy') {
