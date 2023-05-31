@@ -10,7 +10,7 @@ pipeline {
                 git credentialsId: 'ca-git-access', branch: 'dev', url: "https://git.cloudavise.com/visops/t058/sample-html-app.git"
             }
         }
-        stage('prepare') {
+        stage('install') {
             steps{
                     sh "sudo chmod 400 master.pem"
                     sh "sudo ansible-playbook -i inventory install-nginx.yml"
