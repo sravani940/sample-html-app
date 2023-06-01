@@ -12,12 +12,12 @@ pipeline {
         }
         stage('install') {
             steps {
-                sh "ansible-playbook -i inventory install_nginx.yml"
+                sh "ansible-playbook -i inventory install-docker.yml"
             }
         }
         stage('deploy') {
             steps {
-                sh "ansible-playbook -i inventory deploy_index.yml"
+                sh "ansible-playbook -i inventory deploy-docker.yml"
             }
         }
     }
