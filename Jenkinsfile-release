@@ -1,0 +1,27 @@
+pipeline {
+    agent {
+        node {
+            label 't058-runner'
+        }
+    }
+
+
+
+ stage('Add tag and Push to dockerhub') {
+            steps {
+                script {
+                    def imageName = "sravani11/nginx-app"
+                    def imageTag = "${nginx}:${env.BUILD_NUMBER}"
+                    def latestTag = "${new-nginx}:latest"
+
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                        // Push the image with the build number tag
+                        docker.image(imageTag).push()
+
+                        // Push the image with the 'latest' tag
+                        docker.image(latestTag).push()
+                    }
+                }
+            }
+    }
+}
