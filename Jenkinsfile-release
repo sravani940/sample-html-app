@@ -5,23 +5,33 @@ pipeline {
         }
     }
 
-
-
- stage('Add tag and Push to dockerhub') {
+    stages {
+        stage('Tag and Push to Docker Hub') {
             steps {
                 script {
-                    def imageName = "sravani11/nginx-app"
-                    def imageTag = "${nginx}:${env.BUILD_NUMBER}"
-                    def latestTag = "${new-nginx}:latest"
+                    def remoteServer = '44.203.225.123'
+                    def remoteUser = 'ubuntu'
+                    def remoteDockerImage = 'my-nginx'
+                    def imageName = "sravani111/nginx-webapp:${env.BUILD_NUMBER}"
+                    def latestImageName = "sravani111/nginx-webapp:latest"
 
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                        // Push the image with the build number tag
-                        docker.image(imageTag).push()
-
-                        // Push the image with the 'latest' tag
-                        docker.image(latestTag).push()
+                    withCredentials([
+                        usernamePassword(credentialsId: 't058-docckerhub', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')
+                    ]) {
+                        sshagent(credentials: ['ssh-key-creds']) {
+                            sh """
+                                ssh -o StrictHostKeyChecking=no -l ${remoteUser} ${remoteServer} 'docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD &&
+                                docker tag ${remoteDockerImage} ${imageName} &&
+                                docker tag ${remoteDockerImage} ${latestImageName} &&
+                                docker push ${imageName} &&
+                                docker push ${latestImageName} &&
+                                docker logout'
+                            """
+                        }
                     }
                 }
             }
+        }
     }
 }
+
