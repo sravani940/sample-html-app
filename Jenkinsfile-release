@@ -16,7 +16,7 @@ pipeline {
                     def latestImageName = "sravani111/nginx-webapp:latest"
 
                     withCredentials([
-                        usernamePassword(credentialsId: 't058-docckerhub', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')
+                        usernamePassword(credentialsId: 't058-dockerhub', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')
                     ]) {
                         sshagent(credentials: ['ssh-key-creds']) {
                             sh """
