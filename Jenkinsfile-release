@@ -18,7 +18,7 @@ pipeline {
                     withCredentials([
                         usernamePassword(credentialsId: 't058-dockerhub', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')
                     ]) {
-                        sshagent(credentials: ['ssh-key-creds']) {
+                        sshagent(credentials: ['t058-ssh']) {
                             sh """
                                 ssh -o StrictHostKeyChecking=no -l ${remoteUser} ${remoteServer} 'docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD &&
                                 docker tag ${remoteDockerImage}:v1 ${imageName} &&
